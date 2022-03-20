@@ -9,7 +9,7 @@ namespace OOP_Training
     internal class Player
     {
         public int Health { get; private set; } = 100;
-        public int MaxHealth { get; private set; } = 100;
+        public int MaxHealth { get; private set; }
         public string Name { get; private set; }
 
         internal void SetName(string name)
