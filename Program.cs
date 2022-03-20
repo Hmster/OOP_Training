@@ -19,7 +19,7 @@ namespace OOP_Training
             p1.SetName("p1");
 
             p2.SetHealth(100);
-            p2.SetMaxHealth(50);
+            p2.SetMaxHealth(30);
             p2.SetName("p2");
 
             while (p1.Health > 0 && p2.Health > 0)
@@ -39,7 +39,7 @@ namespace OOP_Training
                     if (p1.Health < 40 && c % 2 == 0)
                     {
                         Output.HealthPrint(p1, p2);
-                        Output.HealPrint(p1.Heal(random.Next(10, 20)), p1);
+                        Output.HealPrint(p1.Heal(random.Next(10, 25)), p1);
                         Console.ReadKey();
                         Console.Clear();
                     }
